@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+        
+    <fieldset>
+        <legend class="area">Area de Cadastro</legend>
+
+        <form action="tabela.html" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" name="country" value="BR" />
+            <label>
+                Primeiro Nome<br/>
+                <input type="text" name="nome" required minlenght="5" value="Ex: Gustavo" onfocus="this.value='';"   />
+            </label>
+            <label>
+                Ultimo Nome:<br/>
+                <input type="text" name="LastName" required minlenght="5" value="Ex: Neri" onfocus="this.value='';"  />
+            </label>
+            <label>
+                Email:<br/>
+                <input type="email" name="Email" required value="Ex: gustavoneri448@gmail.com" onfocus="this.value='';"/>
+            </label>
+            <label>
+                Telefone: <br/>
+                <input type="tel" name="telefone" required value="Ex: (00) 0000-0000" onfocus="this.value='';"/>
+            </label>
+            
+            <label>
+                Género<br/>
+                <Select name="Genre">
+                    <option> selecione </option>
+                    <option value="1"> Transgênero </option>
+                    <option value="2"> Cisgênero </option>
+                    <option value="3"> Não-binário </option>
+                </Select>
+            </label>
+            
+            <label>
+                Anexo (CNH): <br/>
+                <input type="file" name="opcional" accept="pdf/*" />
+            </label>
+
+            <label>
+                <input type="checkbox" required />
+                Eu declaro que li e aceito os <a href="termos/uso.html" target="_blank " class="termos">termos de uso</a>.
+            </label>
+
+            <button>Finalizar Cadastro</button>   
+            <button>Já sou cadastrado</button>
+            
+            <!--codigo_em_andamento -->
+
+        </form>
+    </fieldset>    
+    
+</body>
+</html>
